@@ -1,0 +1,267 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+/*--------------------*/
+body {
+  background: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.picheater {
+  max-width: 44px;
+  max-height: 44px;
+}
+
+table {
+  border: 3px dotted black;
+  margin: auto;
+}
+.toptable1 {
+  background-color: #f6f8fa;
+}
+.toptable2 {
+  background-image: url(/img/tablepic.png);
+  background-color: #688798;
+  width: 100%;
+  margin: 0;
+  color: #ffffff;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.table1 {
+  background-color: #ffffff;
+}
+.table2 {
+  background-color: #f3f6f8;
+  background-image: url();
+}
+.h1style {
+  margin: 0;
+  color: #262626;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.333;
+}
+.h1style {
+  padding-top: 2px;
+  margin: 0;
+  color: #4c4c4c;
+  font-weight: 400;
+}
+
+body {
+  display: flex;
+  position: relative;
+  font-family: "Open Sans";
+}
+/* Menu */
+
+.menu {
+  position: absolute;
+  z-index: 1;
+  border: 1px solid #334b69;
+  width: 190px;
+  height: 1024px;
+  background: linear-gradient(
+    360deg,
+    rgba(34, 50, 71, 0.0001) 0%,
+    #223247 100%
+  );
+  position: absolute;
+  left: 0%;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #334b69;
+}
+
+.menu_title {
+  display: flex;
+  justify-content: center;
+  color: #8dabc4;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 1.7000000476837158px;
+  text-align: left;
+  margin: 17px 0 35px 0;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.subnavigation {
+  display: flex;
+  flex-direction: column;
+  margin-top: 450px;
+  border-bottom: 1px solid #334b69;
+}
+
+.profile_logo {
+  display: flex;
+}
+.link_nav {
+  display: block;
+  text-decoration: none;
+  color: #ecf5fd;
+  margin: 0px 40px 22px 60px;
+  font-size: 15px;
+  line-height: 22px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.profile_logo {
+  color: #fff;
+}
+/* main */
+
+.main {
+  display: grid;
+}
+
+.widgets {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding-left: 250px;
+}
+
+.title {
+  padding-left: 250px;
+  color: #fff;
+}
+
+.btn {
+  background: #4ece3d;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 05);
+  margin: 36px 0 0 220px;
+  border-radius: 4px;
+  height: 42px;
+  width: 174px;
+  border-radius: 4px;
+}
+
+.btn_text {
+  text-align: center;
+  font-family: "Open Sans";
+  color: #fff;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 22px;
+}
+
+.widget1 {
+  grid-column: 1 / 1;
+  grid-row: 1 / 2;
+  align-self: end;
+}
+
+.widget2 {
+  grid-column: 1 / 1;
+  grid-row: 3 / 6;
+  align-self: start;
+}
+.widget3 {
+  grid-column: 2 / 2;
+  grid-row: 1 / 2;
+  align-self: start;
+}
+.widget4 {
+  grid-column: 2 / 2;
+  grid-row: 2 / 3;
+  justify-self: end;
+  align-self: start;
+}
+.widget5 {
+  grid-column: 2 / 2;
+  grid-row: 2 / 3;
+}
+.widget6 {
+  grid-column: 2 / 3;
+  grid-row: 3 / 6;
+}
